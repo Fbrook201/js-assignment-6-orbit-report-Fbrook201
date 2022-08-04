@@ -1,3 +1,4 @@
+import { listLazyRoutes } from '@angular/compiler/src/aot/lazy_routes';
 import { Component } from '@angular/core';
 import { Satellite } from './satellite';
 
@@ -11,7 +12,7 @@ export class AppComponent {
 
   sourceList: Satellite[];
   displayList: Satellite[];
-
+  
 	constructor() {
 		this.sourceList = [];
 		this.displayList = [];
